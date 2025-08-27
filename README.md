@@ -1,5 +1,3 @@
-Got it 👍. Here’s your **final copy-ready README.md** with your details filled in:
-
 ---
 
 # Shadrack Ohungo - Developer Portfolio
