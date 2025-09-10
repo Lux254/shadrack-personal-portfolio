@@ -14,7 +14,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5%;
+    padding: 1rem 5%;
     background: linear-gradient(to right, #EDEDE9, #D6CCC2);
 }
 
@@ -43,6 +43,15 @@ header {
 
 .nav-links a:active {
     color: #8d0801;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #333;
+    font-size: 30px;
 }
 
 .contact-button button {
@@ -564,13 +573,12 @@ a:focus, button:focus {
         width: 85vw;
     }
 
-    .education-content {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+    .about-stats {
+        flex-direction: column;
     }
 
-    .nav-bar {
-        display: none;
+    .about-stats div {
+        margin: 10px 0;
     }
 
     .int-content {
@@ -617,6 +625,11 @@ a:focus, button:focus {
 }
 
 @media (max-width: 1050px){
+
+    .menu-icon {
+        display: block;
+    }
+
     #home {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -638,12 +651,8 @@ a:focus, button:focus {
         border-radius: 10rem;
     }
 
-    .nav-links, .contact-button {
-        display: none;
-    }
-
     .socials a {
-        padding: 2rem;
+        padding: 1.5rem;
         font-size: 2rem;
     }
 
@@ -670,6 +679,40 @@ a:focus, button:focus {
 
     .contact-info {
         grid-template-columns: 1fr;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 8rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: radial-gradient(#EDEDE9, #D6CCC2);
+        gap: 0;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+
+    .nav-links ul.show {
+        max-height: 500px; 
+        opacity: 1;
+    }
+
+    .nav-links ul li {
+        padding: 1.2rem 0;
+        letter-spacing: 2px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .contact-button {
+        display: none;
     }
 }
 
