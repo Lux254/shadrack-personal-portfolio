@@ -9,7 +9,7 @@ This project highlights my background, technical skills, projects, and contact d
 
 ## 🌐 Live Demo
 
-[Visit Live Site](https://lux254.github.io/shadrack-personal-portfolio/)
+[Visit Live Site]
 
 ---
 
